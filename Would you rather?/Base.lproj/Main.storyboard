@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CuN-Ow-JoE">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
@@ -16,68 +16,110 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Would You Rather?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H1a-KW-oEO">
-                                <rect key="frame" x="20" y="44" width="188" height="74"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="italicSystem" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Be in jail for five years" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rAo-Wc-yuF">
-                                <rect key="frame" x="100" y="240" width="340" height="81"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Be in coma for a decade " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vzu-Uf-8lo">
-                                <rect key="frame" x="100" y="534" width="209" height="62"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="5O1-Ji-bze">
+                                <rect key="frame" x="5" y="49" width="404" height="611"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Would You Rather?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H1a-KW-oEO">
+                                        <rect key="frame" x="0.0" y="0.0" width="404" height="24"/>
+                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Be in jail for five years" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rAo-Wc-yuF">
+                                        <rect key="frame" x="0.0" y="55" width="404" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eZO-cA-VLU">
+                                        <rect key="frame" x="0.0" y="106.5" width="404" height="10"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="10" id="shj-W6-trS"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oNh-pk-Uwi">
+                                        <rect key="frame" x="0.0" y="147.5" width="404" height="150"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Jail" translatesAutoresizingMaskIntoConstraints="NO" id="YiI-LZ-Xgj">
+                                                <rect key="frame" x="0.0" y="0.0" width="404" height="150"/>
+                                                <gestureRecognizers/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="150" id="hJt-lt-xpP"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Be in coma for a decade " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vzu-Uf-8lo">
+                                        <rect key="frame" x="0.0" y="328.5" width="404" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DtJ-nf-dk1">
+                                        <rect key="frame" x="0.0" y="380" width="404" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rA8-7K-zjX">
+                                        <rect key="frame" x="0.0" y="461" width="404" height="150"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Coma" translatesAutoresizingMaskIntoConstraints="NO" id="1Q4-79-68u">
+                                                <rect key="frame" x="0.0" y="0.0" width="404" height="150"/>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="Dll-tp-Gf6"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstItem="oNh-pk-Uwi" firstAttribute="leading" secondItem="5O1-Ji-bze" secondAttribute="leading" constant="5" id="23P-Nx-ORS"/>
+                                    <constraint firstItem="oNh-pk-Uwi" firstAttribute="top" secondItem="rAo-Wc-yuF" secondAttribute="bottom" constant="5" id="CmV-cD-QKg"/>
+                                    <constraint firstItem="rA8-7K-zjX" firstAttribute="top" secondItem="Vzu-Uf-8lo" secondAttribute="bottom" constant="5" id="Dxo-Of-gFK"/>
+                                    <constraint firstAttribute="trailing" secondItem="DtJ-nf-dk1" secondAttribute="trailing" constant="5" id="WNw-XK-kX8"/>
+                                    <constraint firstAttribute="trailing" secondItem="rA8-7K-zjX" secondAttribute="trailing" constant="5" id="av7-79-sgh"/>
+                                    <constraint firstItem="DtJ-nf-dk1" firstAttribute="top" secondItem="Vzu-Uf-8lo" secondAttribute="bottom" constant="5" id="mI6-JV-x5O"/>
+                                    <constraint firstItem="DtJ-nf-dk1" firstAttribute="leading" secondItem="5O1-Ji-bze" secondAttribute="leading" constant="5" id="nMi-3d-6JX"/>
+                                    <constraint firstAttribute="trailing" secondItem="oNh-pk-Uwi" secondAttribute="trailing" constant="5" id="o3t-1A-59V"/>
+                                    <constraint firstItem="rA8-7K-zjX" firstAttribute="leading" secondItem="5O1-Ji-bze" secondAttribute="leading" constant="5" id="p6x-Fg-OZy"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="RTQ-kP-4ey" appends="YES" id="uJe-CL-Om6"/>
+                                </connections>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5O1-Ji-bze" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="5" id="Jgz-jb-hiK"/>
+                            <constraint firstItem="5O1-Ji-bze" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="Mdx-cb-SKS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5O1-Ji-bze" secondAttribute="trailing" constant="5" id="iZx-Ve-bV1"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ffJ-bT-fIZ">
-                        <barButtonItem key="rightBarButtonItem" title="Next--&gt;" id="b13-zg-AIN">
-                            <connections>
-                                <action selector="nextScreen:" destination="BYZ-38-t0r" id="WQy-J2-ye5"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Next--&gt;" id="b13-zg-AIN"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="questionOne" destination="rAo-Wc-yuF" id="pjt-yj-Ga4"/>
-                        <outlet property="questionTwo" destination="Vzu-Uf-8lo" id="gec-X1-lT1"/>
-                        <outlet property="theTitle" destination="ffJ-bT-fIZ" id="4k0-5F-3G5"/>
+                        <outlet property="pictureOne" destination="YiI-LZ-Xgj" id="qUz-3p-h11"/>
+                        <outlet property="pictureTwo" destination="1Q4-79-68u" id="QMv-6P-ytg"/>
+                        <outlet property="questionOne" destination="YiI-LZ-Xgj" id="soq-XO-reZ"/>
+                        <outlet property="questionTwo" destination="Vzu-Uf-8lo" id="HVb-un-Pdo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="928.98550724637687" y="83.705357142857139"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="EDu-vu-srL">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CuN-Ow-JoE" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="kE5-gK-vdS">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
+                <tapGestureRecognizer id="RTQ-kP-4ey">
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="qto-Sp-6G3"/>
+                        <action selector="tapme:" destination="BYZ-38-t0r" id="q3H-Sq-hk2"/>
                     </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nqZ-0z-FXx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="18.840579710144929" y="83.705357142857139"/>
+            <point key="canvasLocation" x="678" y="-18"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Coma" width="735" height="490"/>
+        <image name="Jail" width="768" height="512"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

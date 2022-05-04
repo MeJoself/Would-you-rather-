@@ -7,27 +7,45 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController
+{
 
     //Declare variables, constantats and outlets
+    
     @IBOutlet weak var questionOne: UILabel!
     
-    @IBOutlet weak var theTitle: UINavigationItem!
     @IBOutlet weak var questionTwo: UILabel!
+
+    @IBOutlet weak var pictureOne: UIImageView!
     
-    var phraseArray ["be in jail for five years", "never be able to go out during the day", "vomit on your hero", "have universal respect", "have everyone you know be able to read your thoughts", "get a paper cut everytime you turn a page"]
-    ["be in coma for a decade", "or never be able to go out during the night", "have your hero vomit on you", "unlimted power", "for everyone you you know to have access to your internet history", "bite your tongue everytime you eat"]
+    @IBOutlet weak var pictureTwo: UIImageView!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    var phraseArray = ["Be in jail for five years", "Never be able to go out during the day", "Be forced to live the same day over and over again for a full year ", "Have universal respect", "Stay the age you are physically forever", "Get a paper cut everytime you turn a page", "Hunt and butcher your own meat"]
+   var phraseArrayTwo = ["Be in coma for a decade", "Or never be able to go out during the night", "Take 3 years off the end of your life", "Unlimted power", "Stay the way you are now financially forever", "Bite your tongue everytime you eat", "Never eat meat again"]
+    
+    var phaseArrayPic = ["Jail", "Sun Burn", "Groundhog Day", "Mike Tyson", "Never Ageing Keanu", "Heal me", "Shoot"]
+    var phaseArrayPicTwo = ["Coma", "Night", "Joe Recomend", "Palpatine", "Money", "Ouch", "No meat"]
+    
+    
+    override func viewDidLoad()
+    {
+super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+//    func assignbackground ()
+//    {
+//    let
+//    }
 
-    @IBAction func nextScreen(_ sender: Any)
+    @IBAction func tapme(_ sender: Any)
     {
+        print("hi")
         
         
     }
     
+        
 }
+    
+
 
